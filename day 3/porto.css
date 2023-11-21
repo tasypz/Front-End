@@ -1,0 +1,129 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(235, 224, 226);
+  font-family: Helvetica;
+}
+
+nav {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: pink;
+  font-size: 15px;
+  background-color: #1b1b32;
+  z-index: 1;
+}
+
+.right {
+  display: flex;
+  padding: 0px 30px;
+}
+.left {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 20px 30px;
+  color: inherit;
+  font-size: 24px;
+}
+
+.right a:hover {
+  color: rgb(182, 6, 182);
+  text-shadow: 0 0 2px yellow;
+}
+
+#home, #project, #contact,
+.container {
+  width: 1000px
+}
+
+.container {
+  padding-top: 50px;
+}
+
+#about-container {
+  display: flex;
+}
+button {
+  display: block;
+  margin: auto;
+  width: 250px;
+  padding: 10px;
+  font-size: 20px;
+  background: #1b1b32;
+  color: pink;
+  border: 3px solid #3b3b4f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button {
+  width: 70%;
+  display: flex;
+}
+
+
+.left-about {
+  flex: 4;
+  text-align: justify;
+  font-family: inherit;
+  font-size: 20px;
+}
+.right-about {
+  flex: 1;
+  margin-top: 7rem;
+}
+
+i:hover {
+  color: rgb(182, 6, 182);
+}
+
+.icon-container {
+  display: flex;
+  padding-left: 10px;
+  gap: 50px; /
+}
+
+.icon-container i {
+  font-size: 1.7rem; 
+
+}
+
+.allproject {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 32px 0px;
+  width: 100%;
+}
+.project img {
+  max-width: 200px;
+  justify-content: center;
+  
+}
+.project {
+  width: 100%;
+ 
+}
+
+.project p {
+  text-align: center;
+}
+
+#contact {
+ text-align: center;
+}
