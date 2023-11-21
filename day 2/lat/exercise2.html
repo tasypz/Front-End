@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Band</title>
+    <style>
+      @media (prefers-reduced-motion: no-preference) {
+        * {
+          scroll-behavior: smooth;
+        }
+      }
+      body {
+        margin: 0;
+      }
+      .navbar {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: 40px;
+        background-color: black;
+        color: white;
+        font-family: sans-serif;
+        display: flex;
+        padding-left: 25px;
+      }
+      span {
+        padding-top: 10px;
+        padding-left: 25px;
+        padding-right: 30px;
+        font-weight: 400;
+        display: block;
+        height: 30px;
+      }
+      span:hover {
+        background-color: #dfdfe2;
+        color: #1b1b32;
+        cursor: pointer;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .caption {
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+      }
+
+      body > div > img {
+        width: 100%;
+      }
+      #band {
+        width: 800px;
+        /* margin-left: 125px; */
+        margin: auto;
+        margin-bottom: 30px;
+      }
+      .band-description,
+      .allmember {
+        margin: 20px;
+      }
+      .allmember {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+      }
+      .member img {
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#home" class="button"><span>HOME</span></a>
+      <a href="#band" class="button"><span>BAND</span></a>
+      <span>TOUR</span>
+      <span>CONTACT</span>
+      <span>MORE</span>
+      <span class="search">SEARCH</span>
+    </div>
+    <div id="home">
+      <img src="https://www.w3schools.com/w3images/ny.jpg" />
+      <div class="caption">
+        <h3>New York</h3>
+        <p>The atmosphere in New York is lorem ipsum.</p>
+      </div>
+    </div>
+    <div id="band">
+      <div class="band-description">
+        <center>
+          <h2 class="title">The Band</h2>
+          <p style="color: grey"><i>We love music</i></p>
+        </center>
+        <p class="description" style="text-align: justify">
+          We have created a fictional band website. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+      </div>
+      <div class="allmember">
+        <div class="member">
+          <center>
+            <p>Name</p>
+            <img
+              src="https://www.w3schools.com/w3images/bandmember.jpg"
+              class="member"
+              style="width: 60%"
+            />
+          </center>
+        </div>
+        <div class="member">
+          <center>
+            <p>Name</p>
+            <img
+              src="https://www.w3schools.com/w3images/bandmember.jpg"
+              class="member"
+              style="width: 60%"
+            />
+          </center>
+        </div>
+        <div class="member">
+          <center>
+            <p>Name</p>
+            <img
+              src="https://www.w3schools.com/w3images/bandmember.jpg"
+              class="member"
+              style="width: 60%"
+            />
+          </center>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <style>
+      .navbar {
+        position: fixed;
+        padding: 10px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: pink;
+        /* fxed sifatnya kaya absolute, bakal nimpah */
+        /* kl sticky, speerti fixed kl zomm in out tetep, tp dia ga nimpah, ngikutin urutan */
+        /* kl display inline akan berada di garis yg sama, kl display block akan ke bawah */
+      }
+      span {
+        padding: 20px;
+        font-weight: 600;
+      }
+      body {
+        margin: 0;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <span>Home</span>
+      <span>FB</span>
+      <a href="https://google.co.id">
+        <span>Google</span>
+      </a>
+    </div>
+    <h1>ini content</h1>
+  </body>
+</html>

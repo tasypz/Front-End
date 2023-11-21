@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* body {
+        background-color: blue;
+      }
+      @media screen and (max-width: 600px) {
+        body {
+          background-color: green;
+        }
+      } */
+      body {
+        margin: 0;
+      }
+      .navbar {
+        position: sticky;
+        top: 0;
+        background-color: blanchedalmond;
+        padding: 20px;
+        width: 100%;
+      }
+      span {
+        padding: 0px 15px;
+      }
+      .search {
+        width: 500px;
+        display: none;
+        /* menghilangkan search tapi nanti kl media screen lebih dari 605, search muncul*/
+      }
+
+      @media screen and (min-width: 605px) {
+        /* display styling diapply saat min width 605px; */
+        .search {
+          display: inline;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <span>Brand</span>
+      <input class="search" />
+    </div>
+  </body>
+</html>

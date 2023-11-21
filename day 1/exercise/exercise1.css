@@ -1,0 +1,23 @@
+body {
+  margin: 20px;
+}
+
+fieldset {
+  padding: 30px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: black;
+}
+
+p {
+  color: darkslategrey;
+}
+button {
+  width: 10%;
+  height: 2.75em;
+  background-color: rgb(56, 106, 223);
+  color: whitesmoke;
+  border-radius: 5px;
+}

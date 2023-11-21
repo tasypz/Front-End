@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .static {
+        position: static;
+        border: 3px solid greenyellow;
+        left: 20px;
+      }
+      /* static diem aja */
+      .relative {
+        position: relative;
+        border: 3px solid red;
+        left: 20px;
+      }
+      /* relative bisa geser2 kiri kanan atas bawah */
+      .absolute {
+        position: absolute;
+        border: 3px solid blue;
+        top: 20px;
+        background-color: aqua;
+      }
+      /* absolute ga ngikutin parent nya, jadi ngikutin canvas nya */
+      .fixed {
+        position: fixed;
+        border: 3px solid yellow;
+        bottom: 0px;
+        right: 0px;
+      }
+      /* mau dizoom in, out, dia fix disitu */
+    </style>
+  </head>
+  <body>
+    <h1>position static</h1>
+    <p>here is static example</p>
+    <div class="static">this div has static</div>
+
+    <h1>position relative</h1>
+    <p>here is relative example</p>
+    <div class="relative">this div has relative</div>
+
+    <h1>position absolute</h1>
+    <p>here is absolute example</p>
+    <div style="position: absolute; top: 20px; background-color: green">
+      <div class="absolute">this div has absolute</div>
+    </div>
+
+    <div class="fixed">ini fixed</div>
+  </body>
+</html>
